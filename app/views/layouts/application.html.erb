@@ -12,7 +12,14 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
-  </head>
+
+    <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="Nad(hi)ir" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nadhiir.herokuapp.com/" />
+    <meta property="og:image" content=<%= image_tag "link-image.svg", type: "image/svg" %> />
+    <meta property="og:description" content="between blood and gold" />
+    <meta property="og:site_name" content="Nad(hi)ir" />
 
   <body>
     <%= yield %>
